@@ -1,0 +1,9 @@
+<p>foodcategorylist works!</p>
+
+<div *ngFor="let foodCategory of categories">
+  <p>{{ foodCategory.name }}</p>
+  <div *ngFor="let item of foodCategory.varities">
+    <p>{{item}}</p>
+  </div>
+</div>
+
