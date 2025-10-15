@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { HighlightDirective } from '../highlight.directive';
 
 @Component({
   selector: 'app-foodcategorylist',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HighlightDirective],
   templateUrl: './foodcategorylist.component.html',
   styleUrl: './foodcategorylist.component.css'
 })

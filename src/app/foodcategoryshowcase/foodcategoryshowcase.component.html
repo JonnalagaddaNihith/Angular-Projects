@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div
+      class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"
+      *ngFor="let item of categories"
+    >
+      <div class="card h-100 d-flex flex-row flex-sm-column">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.title }}</h5>
+          <p class="card-text">{{ item.description }}</p>
+          <div><img
+          class="card-img-left food-image"
+          [src]="item.image"
+          alt="{{ item.title }}"
+          style="width: 150px; height: 150px; object-fit: cover;"
+            /></div>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
