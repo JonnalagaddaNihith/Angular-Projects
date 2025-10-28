@@ -1,1 +1,17 @@
-<p>menu works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let item of foodData">
+      <div class="card h-100 d-flex flex-column">
+        <img
+          class="card-img-top food-image"
+          [src]="item.image"
+          alt="Card image cap"
+          routerLink="/menudetails/{{ item.id }}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.title }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
