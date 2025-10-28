@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import dataFromFile from '../../../../public/foodMenu.json';
+import { FoodMenuService } from '../../SharedServices/food-menu.service';
 
 @Component({
   selector: 'app-menudetails',
@@ -13,8 +14,12 @@ export class MenudetailsComponent {
   selectedID: any;
   foodData: any;
   selectedFoodData: any;
-  constructor(private objMenuRoute: ActivatedRoute) {
-    this.foodData = dataFromFile; //loading all the food data from the file
+  constructor(
+    private objMenuRoute: ActivatedRoute,
+    private objFoodMenuService: FoodMenuService
+  ) {
+    //dependency injection
+    this.foodData = this.objFoodMenuService.getFoodMenuDataFromFile();
     this.objMenuRoute.params.subscribe((param: any) => {
       this.selectedID = param['menuid']; //retriving the id from the address bar thru ActivatedRoute
       this.loadSpecificFoodData();
