@@ -7,6 +7,8 @@ import { RecipeComponent } from './components/recipe/recipe.component';
 import { RxjsfoodmenuComponent } from './components/rxjsfoodmenu/rxjsfoodmenu.component';
 import { PromobannerComponent } from './components/promobanner/promobanner.component';
 import { CartItemComponent } from './cart-item/cart-item.component';
+import { HistoryOfOrdersComponent } from './features/order-history/history-of-orders/history-of-orders.component';
+import { ReOrderFromHistoryOfOrdersComponent } from './features/order-history/re-order-from-history-of-orders/re-order-from-history-of-orders.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -17,4 +19,9 @@ export const routes: Routes = [
   { path: 'recipes using rxjs', component: RxjsfoodmenuComponent },
   { path: 'CartItem Using Signal', component: CartItemComponent },
   { path: 'promobanner', component: PromobannerComponent },
+  { path: 'OrderHistory', component: HistoryOfOrdersComponent },
+  {
+    path: 'reorderfromhistory',
+    component: ReOrderFromHistoryOfOrdersComponent,
+  },
 ];
