@@ -5,6 +5,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { MenudetailsComponent } from './components/menudetails/menudetails.component';
 import { RecipeComponent } from './components/recipe/recipe.component';
 import { RxjsfoodmenuComponent } from './components/rxjsfoodmenu/rxjsfoodmenu.component';
+import { PromobannerComponent } from './components/promobanner/promobanner.component';
+import { CartItemComponent } from './cart-item/cart-item.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -13,4 +15,6 @@ export const routes: Routes = [
   { path: 'menudetails/:menuid', component: MenudetailsComponent },
   { path: 'recipes', component: RecipeComponent },
   { path: 'recipes using rxjs', component: RxjsfoodmenuComponent },
+  { path: 'CartItem Using Signal', component: CartItemComponent },
+  { path: 'promobanner', component: PromobannerComponent },
 ];
