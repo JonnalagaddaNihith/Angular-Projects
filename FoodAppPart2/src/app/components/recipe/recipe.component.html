@@ -1,6 +1,9 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-4" *ngFor="let item of recipeData?.recipes">
+    <div
+      class="col-md-4"
+      *ngFor="let item of ($any(recipeData$ | async))?.recipes"
+    >
       <div class="card h-100 d-flex flex-column">
         <img
           class="card-img-top food-image"

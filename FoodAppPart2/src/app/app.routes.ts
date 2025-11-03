@@ -4,6 +4,7 @@ import { ContactusComponent } from './components/contactus/contactus.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { MenudetailsComponent } from './components/menudetails/menudetails.component';
 import { RecipeComponent } from './components/recipe/recipe.component';
+import { RxjsfoodmenuComponent } from './components/rxjsfoodmenu/rxjsfoodmenu.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -11,4 +12,5 @@ export const routes: Routes = [
   { path: 'menu', component: MenuComponent },
   { path: 'menudetails/:menuid', component: MenudetailsComponent },
   { path: 'recipes', component: RecipeComponent },
+  { path: 'recipes using rxjs', component: RxjsfoodmenuComponent },
 ];

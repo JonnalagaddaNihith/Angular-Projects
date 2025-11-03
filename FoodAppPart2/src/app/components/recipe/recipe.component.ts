@@ -10,12 +10,12 @@ import { FoodMenuService } from '../../SharedServices/food-menu.service';
   styleUrl: './recipe.component.css',
 })
 export class RecipeComponent {
-  recipeData: any;
+  recipeData$: any;
   constructor(private objFoodMenuService: FoodMenuService) {
-    this.objFoodMenuService
-      .getFoodRecipeDataFromWebsite()
-      .subscribe((data: any) => {
-        this.recipeData = data;
-      });
+    this.recipeData$ = this.objFoodMenuService.getFoodRecipeDataFromWebsite();
+    // .getFoodRecipeDataFromWebsite()
+    // .subscribe((data: any) => {
+    //   this.recipeData$ = data;
+    // });
   }
 }
