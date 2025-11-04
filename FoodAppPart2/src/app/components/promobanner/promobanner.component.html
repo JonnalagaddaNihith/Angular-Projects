@@ -1,3 +1,6 @@
-<br /><br /><br />
-<p>Offer Message: {{ promomsg }}</p>
-<p><input type="button" (click)="checkOffer()" value="Check Offer" /></p>
+<div *ngIf="isVisible" class="banner">
+  <h3>{{ promoText }} will vanish in {{ countdown }} sec(s)</h3>
+</div>
+<div *ngIf="!isVisible" class="banner">
+  <h3>{{ promoText }} has expired</h3>
+</div>

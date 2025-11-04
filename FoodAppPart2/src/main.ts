@@ -6,6 +6,7 @@ import { provideHttpClient } from '@angular/common/http';
 bootstrapApplication(AppComponent, {
   providers: [
     provideHttpClient(),
+    //importProvidersFrom(OrderHistoryModule),
     ...appConfig.providers, // Spread this only if you already have providers in app.config.ts
   ],
 }).catch((err) => console.error(err));

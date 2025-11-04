@@ -8,4 +8,8 @@ console.log('Order History is Ativated.');
   templateUrl: './history-of-orders.component.html',
   styleUrl: './history-of-orders.component.css',
 })
-export class HistoryOfOrdersComponent {}
+export class HistoryOfOrdersComponent {
+  constructor() {
+    console.log('Order History module got loaded');
+  }
+}

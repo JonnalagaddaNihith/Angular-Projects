@@ -79,14 +79,13 @@
             <i class="bi bi-book me-1"></i> CartItem Signals
           </a>
         </li>
-        <li>
+        <li class="nav-item">
           <a
             class="nav-link"
-            [routerLink]="['/promobanner']"
+            routerLink="/promobanner"
             routerLinkActive="active"
+            >Banner for Promo</a
           >
-            <i class="bi bi-book me-1"></i> Promo Banner
-          </a>
         </li>
         <li>
           <a
@@ -96,6 +95,23 @@
           >
             <i class="bi bi-book me-1"></i> Order History
           </a>
+        </li>
+        <li></li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/ordermodule/reorderhistory"
+            routerLinkActive="active"
+            >Lazy loading - history of Orders</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/ordermodule/orderlazyloading"
+            routerLinkActive="active"
+            >Order History using lazyload comp</a
+          >
         </li>
       </ul>
     </div>
