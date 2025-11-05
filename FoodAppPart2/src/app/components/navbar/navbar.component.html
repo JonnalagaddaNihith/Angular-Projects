@@ -1,23 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top mt-5">
   <div class="container">
-    <!-- Brand/logo -->
-    <a class="navbar-brand fw-bold" routerLink="/">
-      <i class="bi bi-egg-fried me-2"></i>Food App
-    </a>
-
-    <!-- Toggle button for mobile -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
     <!-- Navbar links -->
     <div
       class="collapse navbar-collapse justify-content-between"
@@ -31,7 +13,7 @@
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
           >
-            <i class="bi bi-house-door me-1"></i> Home
+            Home
           </a>
         </li>
         <li class="nav-item">
@@ -40,7 +22,7 @@
             [routerLink]="['/menu']"
             routerLinkActive="active"
           >
-            <i class="bi bi-menu-button-wide me-1"></i> Food Menu
+            Food Menu
           </a>
         </li>
         <li class="nav-item">
@@ -49,7 +31,7 @@
             [routerLink]="['/contact']"
             routerLinkActive="active"
           >
-            <i class="bi bi-envelope me-1"></i> Contact
+            Contact
           </a>
         </li>
         <li class="nav-item">
@@ -58,7 +40,7 @@
             [routerLink]="['/recipes']"
             routerLinkActive="active"
           >
-            <i class="bi bi-book me-1"></i> Recipes
+            Recipes
           </a>
         </li>
         <li class="nav-item">
@@ -67,7 +49,7 @@
             [routerLink]="['/recipes using rxjs']"
             routerLinkActive="active"
           >
-            <i class="bi bi-book me-1"></i> Recipes rxjs
+            Recipes rxjs
           </a>
         </li>
         <li class="nav-item">
@@ -76,7 +58,7 @@
             [routerLink]="['/CartItem Using Signal']"
             routerLinkActive="active"
           >
-            <i class="bi bi-book me-1"></i> CartItem Signals
+            CartItem Signals
           </a>
         </li>
         <li class="nav-item">
@@ -93,7 +75,7 @@
             class="nav-link"
             routerLink="/ordermodule/reorderhistory"
             routerLinkActive="active"
-            >Lazy loading - history of Orders</a
+            >Lazy loading</a
           >
         </li>
         <li class="nav-item">
@@ -101,12 +83,22 @@
             class="nav-link"
             routerLink="/ordermodule/orderlazyloading"
             routerLinkActive="active"
-            >Order History using lazyload comp</a
+            >lazyload comp</a
           >
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/login" routerLinkActive="active"
             >Login</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/register" routerLinkActive="active"
+            >User Registration</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/mdf" routerLinkActive="active"
+            >MDF</a
           >
         </li>
       </ul>

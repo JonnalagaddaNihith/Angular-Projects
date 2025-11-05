@@ -10,6 +10,8 @@ import { CartItemComponent } from './cart-item/cart-item.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { authGuard } from './auth/auth.guard';
 import { LoginComponent } from './login/login.component';
+import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
+import { FoodOrderReactiveFormsComponent } from './components/food-order-reactive-forms/food-order-reactive-forms.component';
 // import { HistoryOfOrdersComponent } from './features/order-history/history-of-orders/history-of-orders.component';
 // import { ReOrderFromHistoryOfOrdersComponent } from './features/order-history/re-order-from-history-of-orders/re-order-from-history-of-orders.component';
 
@@ -34,6 +36,14 @@ export const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: 'register',
+    component: UserRegistrationComponent,
+  },
+  {
+    path: 'mdf',
+    component: FoodOrderReactiveFormsComponent,
   },
 
   // { path: 'OrderHistory', component: HistoryOfOrdersComponent },
