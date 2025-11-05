@@ -5,9 +5,11 @@ import { MenuComponent } from './components/menu/menu.component';
 import { MenudetailsComponent } from './components/menudetails/menudetails.component';
 import { RecipeComponent } from './components/recipe/recipe.component';
 import { RxjsfoodmenuComponent } from './components/rxjsfoodmenu/rxjsfoodmenu.component';
-import { PromobannerComponent } from './components/promobanner/promobanner.component';
+// import { PromobannerComponent } from './components/promobanner/promobanner.component';
 import { CartItemComponent } from './cart-item/cart-item.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { authGuard } from './auth/auth.guard';
+import { LoginComponent } from './login/login.component';
 // import { HistoryOfOrdersComponent } from './features/order-history/history-of-orders/history-of-orders.component';
 // import { ReOrderFromHistoryOfOrdersComponent } from './features/order-history/re-order-from-history-of-orders/re-order-from-history-of-orders.component';
 
@@ -28,6 +30,12 @@ export const routes: Routes = [
         (m) => m.OrderHistoryModule
       ),
   },
+  { path: 'contact', component: ContactusComponent, canActivate: [authGuard] },
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
+
   // { path: 'OrderHistory', component: HistoryOfOrdersComponent },
   // {
   //   path: 'reorderfromhistory',
